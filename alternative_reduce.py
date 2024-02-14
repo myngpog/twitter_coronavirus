@@ -38,6 +38,7 @@ plt.ylabel('Hashtag Count')
 plt.title('Hashtag Count over the Year')
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
+plt.legend()
 
 output_filename = 'hashtag_count.png'
 plt.savefig(output_filename)
