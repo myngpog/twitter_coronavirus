@@ -31,7 +31,7 @@ items = sorted(counts[args.key].items(), key=lambda item: (item[1],item[0]), rev
 
 for k,v in reversed(items[:10]):
     print(k,':',v)
-    plt.bar(k, v)
+    plt.bar(k, v, color='blue')
 
 # Plot the thing
 label_suffix = 'Country' if args.input_path.endswith('.country') else 'Language'
